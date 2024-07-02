@@ -1,0 +1,61 @@
+plugins {
+    alias(libs.plugins.androidApplication)
+}
+
+android {
+    namespace 'bunke.DirectPoll'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "bunke.DirectPoll"
+        minSdk 26
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+    }
+
+    packagingOptions{
+        exclude 'META-INF/LICENSE.md'
+        exclude 'META-INF/LICENSE-notice.md'
+    }
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.constraintlayout
+    implementation libs.navigation.fragment
+    implementation libs.navigation.ui
+    implementation libs.preference
+    implementation libs.coordinatorlayout
+    implementation libs.junit.v121
+    androidTestImplementation libs.espresso.core.v330 // Latest Espresso version
+    androidTestImplementation libs.androidx.espresso.intents.v361
+    androidTestImplementation libs.androidx.espresso.contrib // or the latest version
+    androidTestImplementation "org.hamcrest:hamcrest-all:1.3"
+    //androidTestImplementation(libs.hamcrest.library)
+
+
+
+}

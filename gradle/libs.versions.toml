@@ -1,0 +1,56 @@
+[versions]
+agp = "8.3.2"
+androidxEspressoCore = "3.6.1"
+androidxEspressoCoreVersion = "3.3.0"
+androidxJunit = "1.2.1"
+androidxJunitVersion = "1.1.2"
+espressoCoreVersion = "3.0.2"
+espressoIntents = "3.6.1"
+hamcrestLibrary = "2.2"
+junit = "4.13.2"
+junitJupiter = "5.8.1"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+appcompat = "1.6.1"
+material = "1.11.0"
+constraintlayout = "2.1.4"
+navigationFragment = "2.7.7"
+navigationUi = "2.7.7"
+preference = "1.2.0"
+coordinatorlayout = "1.2.0"
+rules = "1.6.1"
+rulesVersion = "1.5.0"
+roomCompiler = "2.6.1"
+
+[libraries]
+android-espresso-core = { module = "com.android.support.test.espresso:espresso-core", version.ref = "espressoCoreVersion" }
+androidx-espresso-contrib = { module = "androidx.test.espresso:espresso-contrib", version.ref = "espressoCore" }
+androidx-espresso-intents = { module = "androidx.test.espresso:espresso-intents", version.ref = "espressoCore" }
+androidx-espresso-intents-v361 = { module = "androidx.test.espresso:espresso-intents", version.ref = "espressoIntents" }
+androidx-rules-v150 = { module = "androidx.test:rules", version.ref = "rulesVersion" }
+espresso-core-v330 = { module = "androidx.test.espresso:espresso-core", version.ref = "androidxEspressoCoreVersion" }
+espresso-core-v361 = { module = "androidx.test.espresso:espresso-core", version.ref = "androidxEspressoCore" }
+espresso-intents = { module = "com.android.support.test.espresso:espresso-intents", version.ref = "espressoCoreVersion" }
+hamcrest-library = { module = "org.hamcrest:hamcrest-library", version.ref = "hamcrestLibrary" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junitJupiter" }
+junit-jupiter-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junitJupiter" }
+junit-jupiter-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junitJupiter" }
+junit-v112 = { module = "androidx.test.ext:junit", version.ref = "androidxJunitVersion" }
+junit-v121 = { module = "androidx.test.ext:junit", version.ref = "androidxJunit" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "constraintlayout" }
+navigation-fragment = { group = "androidx.navigation", name = "navigation-fragment", version.ref = "navigationFragment" }
+navigation-ui = { group = "androidx.navigation", name = "navigation-ui", version.ref = "navigationUi" }
+preference = { group = "androidx.preference", name = "preference", version.ref = "preference" }
+coordinatorlayout = { group = "androidx.coordinatorlayout", name = "coordinatorlayout", version.ref = "coordinatorlayout" }
+rules = { module = "androidx.test:rules", version.ref = "rules" }
+runner = { module = "androidx.test:runner", version.ref = "rules" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomCompiler" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+
